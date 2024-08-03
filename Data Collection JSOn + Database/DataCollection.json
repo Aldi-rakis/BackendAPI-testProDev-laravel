@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "f9311f2a-d6e2-4199-8071-1594fb4a997b",
+		"name": "API-Backend(CRUD)-Prodev",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29530725"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Index Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ctaegory Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Category Destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "catergory Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "wisata edit",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "postman-cloud:///1ef05690-697a-4080-afd8-3365417af965"
+								},
+								{
+									"key": "_method",
+									"value": "PATCH",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Place",
+			"item": [
+				{
+					"name": "Place Index",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/place",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"place"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/place",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"place"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place Show",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/place/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"place",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place destroy",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/place/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"place",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Place Update",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "title",
+								"value": "Place judul di update",
+								"type": "text"
+							},
+							{
+								"key": "category_id",
+								"value": "1",
+								"type": "text"
+							},
+							{
+								"key": "description",
+								"value": "simpang lima berada di jawa barat",
+								"type": "text"
+							},
+							{
+								"key": "phone",
+								"value": "-",
+								"type": "text"
+							},
+							{
+								"key": "website",
+								"value": "-",
+								"type": "text"
+							},
+							{
+								"key": "office_hours",
+								"value": "-",
+								"type": "text"
+							},
+							{
+								"key": "address",
+								"value": "jawa barat",
+								"type": "text"
+							},
+							{
+								"key": "latitude",
+								"value": "-6.990309061958044",
+								"type": "text"
+							},
+							{
+								"key": "longitude",
+								"value": "110.42292149996013",
+								"type": "text"
+							},
+							{
+								"key": "_method",
+								"value": "PATCH",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/place/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"place",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
